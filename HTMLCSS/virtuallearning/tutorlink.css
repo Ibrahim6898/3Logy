@@ -111,9 +111,12 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+
 }
 .hero a:hover {
     background-color: #207dbb;
+    transition: transform 0.2s;
+    transform: scale(1.05);
 }
 
 
@@ -134,61 +137,53 @@ body {
     justify-content: center;
 }
 
+/* Add styles for the tutor cards */
 .tutor-card {
-    width: 250px;
+    width: 30%; /* Adjust the width to accommodate three cards per row */
     margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: 500px;
+}
+
+.tutor-card:hover {
+    transform: scale(1.05);
 }
 
 .tutor-card img {
     width: 100%;
-    height: 100%;
+    height: 80%; /* Set the image height */
     object-fit: cover;
 }
 
-.tutor-card h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
+.tutor-info {
+    padding: 0;
+    text-align: center;
 }
 
-.tutor-card p {
+.tutor-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3px 0;
+}
+
+.tutor-info p {
     font-size: 16px;
-    margin-top: 5px;
+    margin: 0;
+}
+.tutor-card .tutor-info p:nth-child(3) {
+    font-size: 13px;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
-    .featured-tutors h2 {
-        font-size: 24px;
-    }
-    .tutors-container {
-        flex-direction: column;
-    }
-    .tutor-card{
-        width: 100%;
+    .tutor-card {
+        width: 100%; /* Make the cards stack on smaller screens */
     }
 }
-
-/* .features { */
-    /* text-align: center; */
-    /* padding: 40px 0; */
-/* } */
-/* .features .feature { */
-    /* width: 300px; */
-    /* background-color: white; */
-    /* display: inline-block; */
-    /* margin: 0 2%; */
-    /* padding: 20px; */
-    /* border: 1px solid #ccc; */
-    /* border-radius: 5px; */
-/* } */
-/*  */
-/* .features h3 { */
-    /* font-size: 24px; */
-/* } */
-/*  */
-/* .features p { */
-    /* font-size: 16px; */
-/* } */
 
 footer {
     background-color: #3498db;
