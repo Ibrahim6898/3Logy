@@ -1,0 +1,198 @@
+body {
+   
+    margin: 0;
+    padding: 0;
+    font-family:  Arial, sans-serif;
+}
+
+
+.hero .search-bar {
+    display: flex;
+    position: absolute;
+    float: right;
+    right: 20px;
+    top: 200px;
+    
+
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/*Style the navigation bar container*/
+.navbar {
+    background-color: #3498db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Style the navigation links */
+.nav-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links a:hover{
+    background-color: #207dbb;
+}
+.nav-link, li{
+    margin-right: 16px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+ /* Add a media query for mobile responsiveness */
+@media  screen and (max-width: 768px){
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin-bottom: 16px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+        max-width: 100%;
+        padding: 5px; /* Allow the input field to take up the full width */
+    }
+
+    .search-bar button {
+        display: block;
+        margin: 0 auto;
+    }
+    
+}
+
+.hero {
+    background-image: url('hero2.jpg'); /* Add a background image */
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 20px;
+    font-style: bold;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.hero a:hover {
+    background-color: #207dbb;
+}
+
+
+.featured-tutors {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.featured-tutors h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tutors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tutor-card {
+    width: 250px;
+    margin: 10px;
+}
+
+.tutor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tutor-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tutor-card p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .featured-tutors h2 {
+        font-size: 24px;
+    }
+    .tutors-container {
+        flex-direction: column;
+    }
+    .tutor-card{
+        width: 100%;
+    }
+}
+
+/* .features { */
+    /* text-align: center; */
+    /* padding: 40px 0; */
+/* } */
+/* .features .feature { */
+    /* width: 300px; */
+    /* background-color: white; */
+    /* display: inline-block; */
+    /* margin: 0 2%; */
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+/* } */
+/*  */
+/* .features h3 { */
+    /* font-size: 24px; */
+/* } */
+/*  */
+/* .features p { */
+    /* font-size: 16px; */
+/* } */
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
