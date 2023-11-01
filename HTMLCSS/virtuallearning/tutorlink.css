@@ -5,7 +5,6 @@ body {
     font-family:  Arial, sans-serif;
 }
 
-
 .hero .search-bar {
     display: flex;
     position: absolute;
@@ -34,11 +33,31 @@ body {
 
 /*Style the navigation bar container*/
 .navbar {
-    background-color: #3498db;
+    background-color: hsl(204, 70%, 53%);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+
+.cta {
+    display: flex;
+    gap: 16px;
+}
+
+.reg a, .login a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #062342;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.reg a:hover, .login a:hover {
+    background-color: hsl(204, 80%, 60%);
+    transition: transform 0.2s;
+    transform: scale(1.05);
 }
 
 /* Style the navigation links */
@@ -47,6 +66,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 .nav-links a:hover{
@@ -62,11 +82,7 @@ body {
     font-weight: bold;
 }
  /* Add a media query for mobile responsiveness */
-@media  screen and (max-width: 768px){
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
 
     .nav-links li {
         margin-bottom: 16px;
@@ -78,12 +94,23 @@ body {
         padding: 5px; /* Allow the input field to take up the full width */
     }
 
+    .ttt {
+        display: flex;
+        flex-direction: row;
+ 
+    }
+    @media (max-width: 768px) {
+        .ttt {
+            flex-direction: column;
+        }
+    }
+
     .search-bar button {
         display: block;
         margin: 0 auto;
     }
     
-}
+
 
 .hero {
     background-color: #062342;
@@ -120,6 +147,8 @@ body {
     margin-top: 20px;
 
 }
+
+
 .hero a:hover {
     background-color: #207dbb;
     transition: transform 0.2s;
@@ -359,7 +388,6 @@ footer {
     }
 }
 
-
 @media (max-width: 768px) {
     .tutor-card {
         width: 100%; /* Make the cards stack on smaller screens */
@@ -373,3 +401,9 @@ footer {
     }
 
 }
+
+@media  screen and (max-width: 768px){
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
