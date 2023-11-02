@@ -394,6 +394,67 @@ h2 {
     color: #fff;
 }
 
+.search-filters {
+    background-color: #f4f4f4; /* Background color for the entire section */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.search-filters h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.search-filters form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.search-filters label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-filters select,
+.search-filters input[type="text"],
+.search-filters input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-filters select {
+    /* Additional select styles */
+}
+
+.search-filters input[type="range"] {
+    /* Additional range input styles */
+}
+
+#price-range-value {
+    display: block;
+    margin-top: 5px;
+}
+
+.search-filters button {
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search-filters button:hover {
+    background-color: #0077b3; /* Darker color on hover */
+}
+
+
 footer {
     background-color: #3498db;
     color: #fff;
