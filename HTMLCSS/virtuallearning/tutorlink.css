@@ -97,6 +97,31 @@ li {
     padding: 50px 0;
     /* Add padding to create space for the search bar at the top */
 }
+.heroc {
+    
+    background-color: #062342;
+    padding: 6rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroc-content {
+    width: 100%;
+    height: 200px;
+    background-image: url(contact.jpg);
+    border-radius: 8px;
+}
+
+
+.heroc h2 {
+    /* background-color: #0623426f; */
+    /* font-size: 48px; */
+    /* margin-top: 20px; */
+    text-align: center;
+    padding-top: 50px;
+}
 
 .search-bar {
     position: absolute;
@@ -139,7 +164,35 @@ li {
 
     /* Add any additional styles for smaller screens as needed */
 }
+.urcontact {
+    display: flex;
+    flex-direction: row;
+    background-color: #ccc;
+    margin: 20px;  
+    justify-content: space-between;
 
+}
+ .ucontact {
+    background-color: whitesmoke;
+    display: flexbox;
+    border: 1px solid #8e8888;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    height: 200px;
+}
+
+.ucontact h3{
+    text-align: center;
+    color: #000;
+}
+.ucontact p{
+    font-size: 15px;
+    color: #726f6f;
+    text-align: center;
+}
 
 .hero {
     background-color: #062342;
@@ -150,7 +203,7 @@ li {
 }
 
 .hero .image {
-    width: 50%;
+    width: 30%;
     display: none;
 }
 
@@ -210,7 +263,7 @@ h2 {
 
 /* Featured Tutors */
 .featured-tutors {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 
@@ -559,12 +612,99 @@ button[type="submit"]:hover {
 }
 
 
+/* Footer styles */
 footer {
-    background-color: #3498db;
+    background-color: #062342;
     color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
 }
+
+/* Footer content container */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Newsletter Signup styles */
+.newsletter-signup {
+    flex: 1;
+}
+
+.newsletter-signup h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.newsletter-signup form {
+    display: flex;
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #fff;
+}
+
+.newsletter-signup button {
+    background-color: #fff;
+    color: #062342;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Copyright and legal links styles */
+.copyright,
+.legal-links {
+    flex: 1;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+.legal-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Back to Top button styles */
+.back-to-top {
+    flex: 1;
+    text-align: right;
+}
+
+.back-to-top a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Social media links styles */
+.social-media-links {
+    flex: 1;
+    text-align: right;
+}
+
+.social-media-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.social-media-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Add hover or other styles as needed */
+
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
