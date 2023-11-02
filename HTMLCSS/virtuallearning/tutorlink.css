@@ -13,10 +13,12 @@ body {
     align-items: center;
     padding: 10px 20px;
 }
-.logo img{
+
+.logo img {
     width: 50%;
     height: auto;
 }
+
 .cta {
     display: flex;
     gap: 16px;
@@ -27,8 +29,10 @@ body {
     color: #fff;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: transparent; /* Set the background to transparent */
-    border: 1px solid #ccc; /* Add a 1px gray border */
+    background-color: transparent;
+    /* Set the background to transparent */
+    border: 1px solid #ccc;
+    /* Add a 1px gray border */
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     transition: transform 0.2s;
@@ -88,16 +92,21 @@ li {
 
 .hero-text {
     position: relative;
-    text-align: center; /* Center-align text in the middle */
-    padding: 50px 0; /* Add padding to create space for the search bar at the top */
+    text-align: center;
+    /* Center-align text in the middle */
+    padding: 50px 0;
+    /* Add padding to create space for the search bar at the top */
 }
 
 .search-bar {
     position: absolute;
-    top: 20px; /* Adjust this value to position the search bar from the top */
-    right: 20px; /* Adjust this value to position the search bar from the right */
+    top: 20px;
+    /* Adjust this value to position the search bar from the top */
+    right: 20px;
+    /* Adjust this value to position the search bar from the right */
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping of the input and button */
+    flex-wrap: nowrap;
+    /* Prevent wrapping of the input and button */
 }
 
 /* Add styles to input and button as needed */
@@ -105,12 +114,14 @@ li {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 10px; /* Add spacing between input and button */
+    margin-right: 10px;
+    /* Add spacing between input and button */
 }
 
 .search-bar button {
     padding: 10px 20px;
-    background-color: #3498db; /* Example background color */
+    background-color: #3498db;
+    /* Example background color */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -120,10 +131,12 @@ li {
 /* Media query for responsiveness on smaller screens */
 @media (max-width: 768px) {
     .search-bar {
-        position: static; /* Reset positioning for smaller screens */
+        position: static;
+        /* Reset positioning for smaller screens */
         display: block;
         text-align: center;
     }
+
     /* Add any additional styles for smaller screens as needed */
 }
 
@@ -394,65 +407,64 @@ h2 {
     color: #fff;
 }
 
-.search-filters {
-    background-color: #f4f4f4; /* Background color for the entire section */
+/* Style for the form container */
+form {
+    max-width: 100%; /* Adjust the width as needed for desktop */
+    margin: 20px;
     padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.search-filters h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+/* Style for form groups (label-input pairs) */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.search-filters form {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
+.form-group label {
+    flex: 1;
+    margin-right: 10px;
 }
 
-.search-filters label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.search-filters select,
-.search-filters input[type="text"],
-.search-filters input[type="range"] {
+.form-group select, .form-group input {
+    flex: 2;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    outline: none;
+    box-sizing: border-box;
 }
 
-.search-filters select {
-    /* Additional select styles */
+/* Style for the range input */
+input[type="range"] {
+    width: 100%;
 }
 
-.search-filters input[type="range"] {
-    /* Additional range input styles */
-}
-
+/* Style for the range value span */
 #price-range-value {
     display: block;
     margin-top: 5px;
+    color: #333;
 }
 
-.search-filters button {
-    background-color: #3498db; /* Button background color */
-    color: #fff; /* Button text color */
+/* Style for the submit button */
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-.search-filters button:hover {
-    background-color: #0077b3; /* Darker color on hover */
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }
+
 
 
 footer {

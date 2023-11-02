@@ -36,42 +36,50 @@
                 <input type="text" placeholder="Search for a tutor">
                 <button type="submit">Search</button>
     </div>
-       
+
     <h2 >Find Your Perfect Tutor</h2>
     <p>Discover experienced tutors who can help you achieve your academic goals.</p>
 </section>
 
-<!-- Search Filters Section -->
-<section class="search-filters">
-    <h3>Search Filters</h3>
+<section>
     <form>
-        <label for="subject">Subject:</label>
-        <select id="subject">
-            <option value="math">Math</option>
-            <option value="science">Science</option>
-            <option value="language">Language</option>
-            <!-- Add more subject options as needed -->
-        </select>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <select id="subject">
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="language">Language</option>
+                <!-- Add more subject options as needed -->
+            </select>
+        </div>
 
-        <label for="location">Location:</label>
-        <input type="text" id="location" placeholder="Enter location">
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter location">
+        </div>
 
-        <label for="availability">Availability:</label>
-        <input type="text" id="availability" placeholder="Enter availability">
+        <div class="form-group">
+            <label for="availability">Availability:</label>
+            <input type="text" id="availability" placeholder="Enter availability">
+        </div>
 
-        <label for="price-range">Price Range:</label>
-        <input type="range" id="price-range" min="0" max="100" step="10">
-        <span id="price-range-value">$0 - $100</span>
+        <div class="form-group">
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="0" max="100" step="10">
+            <span id="price-range-value">$0 - $100</span>
+        </div>
 
-        <label for="rating">Minimum Rating:</label>
-        <select id="rating">
-            <option value="0">Any</option>
-            <option value="1">1 star</option>
-            <option value="2">2 stars</option>
-            <option value="3">3 stars</option>
-            <option value="4">4 stars</option>
-            <option value="5">5 stars</option>
-        </select>
+        <div class="form-group">
+            <label for="rating">Minimum Rating:</label>
+            <select id="rating">
+                <option value="0">Any</option>
+                <option value="1">1 star</option>
+                <option value="2">2 stars</option>
+                <option value="3">3 stars</option>
+                <option value="4">4 stars</option>
+                <option value="5">5 stars</option>
+            </select>
+        </div>
 
         <button type="submit">Apply Filters</button>
     </form>
