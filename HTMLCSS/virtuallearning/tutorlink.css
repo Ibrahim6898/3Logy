@@ -97,13 +97,14 @@ li {
     padding: 50px 0;
     /* Add padding to create space for the search bar at the top */
 }
-.heroc {
+
+.herob {
     
     background-color: #062342;
-    padding: 6rem;
+    padding: 15px;
     color: #ffffff;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -114,13 +115,16 @@ li {
     border-radius: 8px;
 }
 
-
+.heroc p{
+    padding: 8px;
+    text-align: center;
+}
 .heroc h2 {
     /* background-color: #0623426f; */
-    /* font-size: 48px; */
+    font-size: 24px;
     /* margin-top: 20px; */
     text-align: center;
-    padding-top: 50px;
+    padding-top: 2px;
 }
 
 .search-bar {
@@ -703,8 +707,115 @@ footer {
     height: 30px;
 }
 
-/* Add hover or other styles as needed */
+/* User Profile styles */
+.user-profile {
+    align-items: center;
+    padding: 8px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #333;
+    border-radius: 16px;
+}
 
+.user-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+}
+
+.user-profile h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.user-profile p {
+    font-size: 12px;
+}
+
+/* My Sessions styles */
+.my-sessions {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.my-sessions h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.session-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.session-item h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.session-item p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.upcoming {
+    border-left: 5px solid #39b54a; /* Green border for upcoming sessions */
+}
+
+.past {
+    border-left: 5px solid #e74c3c; /* Red border for past sessions */
+}
+
+.session-details-link, .manage-session-link, .feedback-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+}
+
+/* Chat Styles */
+.session-chat {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.session-chat h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.chat-messages {
+    border: 1px solid #ddd;
+    height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+#message-input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#send-button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style for session calendar can be added here */
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
